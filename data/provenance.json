@@ -1,0 +1,12 @@
+{
+  "source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+  "license": "CC BY-SA 4.0",
+  "dataset": "SQuAD 2.0",
+  "downloaded": "2026-09-17",
+  "source_sha256": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8",
+  "subset_sha256": "0690a51dc72bf8df219a46010ee8db37f161463f30ed027af68237f4cd3390a8",
+  "sampling": "3 technical articles; 4 answerable and 4 impossible questions per article; hash-order selection",
+  "scope": "Oracle parent paragraph; dense retrieval over 2-sentence chunks within that paragraph.",
+  "protocol": "No tuning. One fixed prompt, one generator call per case; paired baseline and post-gate outputs.",
+  "limitation": "24-case public-development-set pilot, not a hidden test or real support dataset. Model may have seen SQuAD."
+}

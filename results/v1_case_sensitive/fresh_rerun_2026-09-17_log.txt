@@ -1,0 +1,57 @@
+01/24 | Computational_complexity_theory | answerable | accepted=False
+02/24 | Computational_complexity_theory | answerable | accepted=True
+03/24 | Computational_complexity_theory | answerable | accepted=True
+04/24 | Computational_complexity_theory | answerable | accepted=True
+05/24 | Computational_complexity_theory | unanswerable | accepted=True
+06/24 | Computational_complexity_theory | unanswerable | accepted=True
+07/24 | Computational_complexity_theory | unanswerable | accepted=True
+08/24 | Computational_complexity_theory | unanswerable | accepted=True
+09/24 | Steam_engine | answerable | accepted=False
+10/24 | Steam_engine | answerable | accepted=True
+11/24 | Steam_engine | answerable | accepted=True
+12/24 | Steam_engine | answerable | accepted=True
+13/24 | Steam_engine | unanswerable | accepted=True
+14/24 | Steam_engine | unanswerable | accepted=True
+15/24 | Steam_engine | unanswerable | accepted=False
+16/24 | Steam_engine | unanswerable | accepted=True
+17/24 | Packet_switching | answerable | accepted=True
+18/24 | Packet_switching | answerable | accepted=True
+19/24 | Packet_switching | answerable | accepted=True
+20/24 | Packet_switching | answerable | accepted=True
+21/24 | Packet_switching | unanswerable | accepted=True
+22/24 | Packet_switching | unanswerable | accepted=True
+23/24 | Packet_switching | unanswerable | accepted=True
+24/24 | Packet_switching | unanswerable | accepted=True
+{
+  "n": 24,
+  "answerable": 12,
+  "unanswerable": 12,
+  "methods": {
+    "baseline": {
+      "exact_match": 0.375,
+      "token_f1": 0.4070512820512821,
+      "unsupported_answers": 12,
+      "answerable_refusals": 0,
+      "answered": 24
+    },
+    "gated": {
+      "exact_match": 0.3333333333333333,
+      "token_f1": 0.3653846153846154,
+      "unsupported_answers": 11,
+      "answerable_refusals": 2,
+      "answered": 21
+    }
+  },
+  "latency_seconds": {
+    "median": 5.248515850005788,
+    "p95": 9.004363920007016
+  },
+  "line_count": 50,
+  "validation": "PASS: unit checks, labels/spans, complete 24-case run, <=50 lines",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "models": "nomic-embed-text:latest / qwen2.5-coder:3b"
+  },
+  "frozen_core_sha256": "d1291bec0d404922e80a04cb6ae9d7ac95f494a9674a160ba5874de20cd867de"
+}

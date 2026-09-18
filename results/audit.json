@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Independently recomputed every gate decision with case-folded containment and compared with rag.verify",
+    "1 stored v1 (case-sensitive) decision(s) differ from the case-folded gate",
+    "Repeated two preselected cases; see individual results",
+    "Recomputed count-based and exact-match metrics for all four methods independently",
+    "Recomputed citation precision (book ch. 38) independently"
+  ],
+  "v1_decisions_changed_by_case_fold": [
+    {
+      "id": "56e16182e3433e1400422e28",
+      "stored_v1": false,
+      "case_folded": true,
+      "answer": "computational complexity theory",
+      "quote": "Computational complexity theory is a branch of the theory of computation in theo"
+    }
+  ],
+  "repeatability": [
+    {
+      "id": "56e16182e3433e1400422e28",
+      "same": true
+    },
+    {
+      "id": "5ad56d3e5b96ef001a10ae87",
+      "same": true
+    }
+  ],
+  "scope": "Implementation and arithmetic verification. Does not certify model correctness."
+}

@@ -1,0 +1,33 @@
+{
+  "n": 24,
+  "answerable": 12,
+  "unanswerable": 12,
+  "methods": {
+    "baseline": {
+      "exact_match": 0.375,
+      "token_f1": 0.4070512820512821,
+      "unsupported_answers": 12,
+      "answerable_refusals": 0,
+      "answered": 24
+    },
+    "gated": {
+      "exact_match": 0.3333333333333333,
+      "token_f1": 0.3653846153846154,
+      "unsupported_answers": 11,
+      "answerable_refusals": 2,
+      "answered": 21
+    }
+  },
+  "latency_seconds": {
+    "median": 5.666857099997287,
+    "p95": 9.270629714999812
+  },
+  "line_count": 50,
+  "validation": "PASS: unit checks, labels/spans, complete 24-case run, <=50 lines",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "models": "nomic-embed-text:latest / qwen2.5-coder:3b"
+  },
+  "frozen_core_sha256": "d1291bec0d404922e80a04cb6ae9d7ac95f494a9674a160ba5874de20cd867de"
+}

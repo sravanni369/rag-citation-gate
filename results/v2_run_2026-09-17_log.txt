@@ -1,0 +1,128 @@
+entail 01/24 | supported=True
+entail 02/24 | supported=True
+entail 03/24 | supported=True
+entail 04/24 | supported=True
+entail 05/24 | supported=True
+entail 06/24 | supported=False
+entail 07/24 | supported=True
+entail 08/24 | supported=True
+entail 09/24 | supported=False
+entail 10/24 | supported=True
+entail 11/24 | supported=True
+entail 12/24 | supported=True
+entail 13/24 | supported=True
+entail 14/24 | supported=True
+entail 15/24 | supported=True
+entail 16/24 | supported=True
+entail 17/24 | supported=True
+entail 18/24 | supported=True
+entail 19/24 | supported=False
+entail 20/24 | supported=True
+entail 21/24 | supported=False
+entail 22/24 | supported=False
+entail 23/24 | supported=True
+entail 24/24 | supported=True
+{
+  "n": 24,
+  "answerable": 12,
+  "unanswerable": 12,
+  "methods": {
+    "always_refuse": {
+      "exact_match": 0.5,
+      "exact_match_count": 12,
+      "exact_match_wilson95": [
+        0.314,
+        0.686
+      ],
+      "token_f1": 0.5,
+      "answerable_em": 0,
+      "unanswerable_em": 12,
+      "unsupported_answers": 0,
+      "answerable_refusals": 12,
+      "answered": 0
+    },
+    "baseline": {
+      "exact_match": 0.375,
+      "exact_match_count": 9,
+      "exact_match_wilson95": [
+        0.212,
+        0.573
+      ],
+      "token_f1": 0.4070512820512821,
+      "answerable_em": 9,
+      "unanswerable_em": 0,
+      "unsupported_answers": 12,
+      "answerable_refusals": 0,
+      "answered": 24
+    },
+    "gated": {
+      "exact_match": 0.375,
+      "exact_match_count": 9,
+      "exact_match_wilson95": [
+        0.212,
+        0.573
+      ],
+      "token_f1": 0.4070512820512821,
+      "answerable_em": 8,
+      "unanswerable_em": 1,
+      "unsupported_answers": 11,
+      "answerable_refusals": 1,
+      "answered": 22
+    },
+    "entail_gated": {
+      "exact_match": 0.4583333333333333,
+      "exact_match_count": 11,
+      "exact_match_wilson95": [
+        0.279,
+        0.649
+      ],
+      "token_f1": 0.4903846153846154,
+      "answerable_em": 8,
+      "unanswerable_em": 3,
+      "unsupported_answers": 9,
+      "answerable_refusals": 2,
+      "answered": 19
+    }
+  },
+  "citation_precision": {
+    "supporting_quotes": 9,
+    "quotes": 24,
+    "value": 0.375,
+    "definition": "quote contains a gold answer span (normalized) / all non-empty quotes; unanswerable questions have no gold, so any quote there is decorative"
+  },
+  "paired_vs_baseline": {
+    "gated": {
+      "baseline_only_correct": 1,
+      "gated_only_correct": 1,
+      "mcnemar_exact_p": 1.0
+    },
+    "entail_gated": {
+      "baseline_only_correct": 1,
+      "entail_gated_only_correct": 3,
+      "mcnemar_exact_p": 0.625
+    },
+    "always_refuse": {
+      "baseline_only_correct": 9,
+      "always_refuse_only_correct": 12,
+      "mcnemar_exact_p": 0.6636
+    }
+  },
+  "gate_v1_case_sensitive": {
+    "accepted": 21,
+    "accepted_after_case_fold": 22,
+    "note": "v1 gate used case-sensitive containment while this scorer lowercases; decisions differing between the two are listed in results/audit.json"
+  },
+  "latency_seconds": {
+    "median": 5.666857099997287,
+    "p95": 9.270629714999812,
+    "entail_median": 1.1281824500038056
+  },
+  "line_count": 50,
+  "validation": "PASS: unit checks, labels/spans, complete 24-case run, <=50 lines",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "models": "nomic-embed-text:latest / qwen2.5-coder:3b (digests in results/model_versions.json)"
+  },
+  "frozen_core_sha256": "c234e05b38ac9b5ef8444ef1a27f5244d35300f88a250eef8e8f4d3c56ae3f19"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Independently recomputed every gate decision and citation containment",
+    "Repeated two preselected cases; see individual results",
+    "Recomputed count-based reported metrics independently"
+  ],
+  "repeatability": [
+    {
+      "id": "56e16182e3433e1400422e28",
+      "same": true
+    },
+    {
+      "id": "5ad56d3e5b96ef001a10ae87",
+      "same": true
+    }
+  ],
+  "scope": "Implementation and arithmetic verification. Does not certify model correctness."
+}
