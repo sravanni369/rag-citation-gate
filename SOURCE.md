@@ -27,4 +27,4 @@ Read-only GitHub API inventory: 65 public repositories on 2026-09-17. Relevant R
 
 RAG itself is already represented. Existing projects cover document chat, retrieval implementation, citations and distance-based refusal. This project specifically tests **post-generation exact-span citation checks against adversarially unanswerable questions**, reporting wrong accepted answers and over-refusal in a paired comparison. We do not claim exhaustive inspection of all code or that this is the first RAG evidence-checking implementation.
 
-No GitHub repository was created or modified. No LinkedIn post was published.
+Published to https://github.com/sravanni369/rag-citation-gate on 2026-09-17 after the evaluation audit described in README.md. No LinkedIn post has been published; LinkedIn-caption.md is a draft.
