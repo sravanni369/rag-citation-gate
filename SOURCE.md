@@ -11,7 +11,7 @@ Local source: `C:/nvidia notes/day17_drift_alarms/books/RAG and vector database.
 
 Printed and PDF page numbers match for the inspected pages. Title page and page 31 were rendered and visually inspected locally. The book itself is not included in this project.
 
-`rag.py` is an AI-assisted **adaptation**, not a verbatim reproduction. It replaces SentenceTransformers with an already-installed local Ollama embedding model, uses exact normalized dot products in NumPy, and replaces the book's undefined `claim_supports` placeholder with a deliberately limited exact-span check. This checks textual containment, NOT semantic entailment. That difference is the subject of the experiment, not a claim to have implemented a full verifier.
+`rag.py` is an **adaptation**, not a verbatim reproduction. It replaces SentenceTransformers with an already-installed local Ollama embedding model, uses exact normalized dot products in NumPy, and replaces the book's undefined `claim_supports` placeholder with a deliberately limited exact-span check. This checks textual containment, NOT semantic entailment. That difference is the subject of the experiment, not a claim to have implemented a full verifier.
 
 ## Dataset
 

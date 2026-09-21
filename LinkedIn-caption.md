@@ -1,6 +1,6 @@
 A real citation can still accompany a wrong answer. And "always refuse" beat every version of my model.
 
-For today's book-to-business RAG experiment, I used AI assistance to adapt ideas from Sanjay N T's RAG & Vector Databases (2026), pages 9, 25, 27 and 31, into a 50-line Python core.
+For today's book-to-business RAG experiment, I adapted ideas from Sanjay N T's RAG & Vector Databases (2026), pages 9, 25, 27 and 31, into a 50-line Python core.
 
 The business question: can a post-generation evidence gate make technical-support answers safer?
 

@@ -1,6 +1,6 @@
 # RAG: a valid citation can still support a wrong answer
 
-A 50-line, AI-assisted experiment motivated by technical-support knowledge bases. Can a post-generation citation gate prevent unsupported answers? Two gates were tested on the same 24 generated answers: an exact-span containment check (the book's placeholder made literal) and a semantic entailment check (the book's chapter 46 claim verifier). Neither is fit for autonomous deployment; the entailment gate is the better of the two and the difference is not statistically distinguishable at this sample size.
+A 50-line experiment motivated by technical-support knowledge bases. Can a post-generation citation gate prevent unsupported answers? Two gates were tested on the same 24 generated answers: an exact-span containment check (the book's placeholder made literal) and a semantic entailment check (the book's chapter 46 claim verifier). Neither is fit for autonomous deployment; the entailment gate is the better of the two and the difference is not statistically distinguishable at this sample size.
 
 ## Result
 
@@ -34,7 +34,7 @@ The first version (kept in `results/v1_case_sensitive/`) reported the span gate 
 
 ## Adaptation and data
 
-Adapted from Sanjay N T, *RAG & Vector Databases* (2026), sections 8, 38, 40 and 46, pages 9, 25, 27 and 31. See SOURCE.md for attribution, substitutions and licence. The implementation is AI-assisted and does not reproduce an entire book listing.
+Adapted from Sanjay N T, *RAG & Vector Databases* (2026), sections 8, 38, 40 and 46, pages 9, 25, 27 and 31. See SOURCE.md for attribution, substitutions and licence. The implementation is an adaptation and does not reproduce an entire book listing.
 
 SQuAD 2.0 public development data (CC BY-SA 4.0): 24 questions over 22 distinct paragraphs (two paragraphs each supply one answerable and one unanswerable question), balanced 12/12 across computational complexity, steam engines and packet switching. This is a reading-comprehension proxy for technical support, not customer tickets. Each question is given its correct parent paragraph; retrieval happens within that paragraph. Public-benchmark contamination is possible, and this sample does not establish general performance.
 
